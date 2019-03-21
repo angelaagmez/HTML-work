@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    table {
+    width: 30%;
+    text-align:center;
+}
+
+td, th {
+    border-top: 1px solid grey;
+    border-collapse: collapse;
+}
+tr:nth-child(even) {
+    background-color: snow;
+}
+</style>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/action_page.php">
+    <table>
+        <tr>
+            <td style="font-weight: bold">
+                Title:<span style="color: red">*</span><br>
+                <input type="text" name="title" value="Astronomy for poets">
+                <br>
+            </td>
+            <td style="font-weight: bold">
+                Short Title: <span style="color: red">*</span> <br>
+                <input type="text" name="shorttitle" value="Astr. for poets">
+                <br>
+            </td>
+            <td><p style="font-weight: bold"> Subj.:</p> <br>
+            BLST
+            <br>
+            </td>
+            <td style="font-weight: bold">
+                Num.:<br>
+                <input type="text" name="number" value="10">
+                <br>
+            </td>
+            <td style="font-weight: bold">
+                Section.:<br>
+                <input type="text" name="section" value="01">
+            </td>
+
+            <td style="vertical-align: top" rowspan="6"><p style="font-weight: bold"> Year: </p><br>
+            0910
+            <br>
+            </td>
+        </tr>
+        <tr>
+            <td>                
+                <input type="checkbox" name="enrollmentlimit" value="">Enrollment Limit                
+            </td>
+            <td  style="font-weight: bold">
+                Num.:<br>
+                <input type="text" name="number" value="">
+                <br>
+            </td>
+            <td  style="font-weight: bold">
+                Rationale:<br>
+                <input type="text" name="rationale" value="10">
+                <br>
+            </td>
+            <td rowspan="4" style="vertical-align: top">
+                <ul style="list-style-type: none">
+                    <li  style="font-weight: bold">
+                            Class Meetings/Week:<br>
+                            <input type="number" name="number" value="1">
+                            <br>
+                    </li>
+                    <li  style="font-weight: bold">
+                            Class Hours/Week:<br>
+                            <input type="number" name="number" value="0">
+                            <br>
+                    </li>
+                    <li  style="font-weight: bold">
+                            Semester(s) Offered<br>
+                            <select [multiple]>
+                                    <option>- None -</option>
+                                    <option>a</option>
+                                </select>
+                            <br>
+                            
+                    </li>
+                    <li>
+                        <input type="checkbox" name="check1" value="" checked>Incl. semester in prereqs.
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Offered only once
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Incl. in printed catalog
+                    </li>
+                </ul>
+                
+            </td>
+            <td rowspan="4">
+                <h5>Keywords:</h1>
+                <ul style="list-style-type: none">
+                    <li>
+                            <input type="checkbox" name="check2" value="">Science for non-major
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Fine arts for non-major
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Lab science course
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Artistic practice
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Foreing language/culture taught in English
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Community based learning
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Writting attentive
+                    </li>
+                    <li>
+                            <input type="checkbox" name="check2" value="">Writting intensive
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">                
+                <input type="checkbox" name="consent" value="">Consent required               
+            </td>
+            <td style="font-weight: bold">
+                Rationale:<br>
+                <input type="text" name="rationale" value="10">
+                <br>
+            </td>
+        </tr>
+        <tr>
+        <td>                
+                <input type="checkbox" name="lcl" value="">Limit class level                
+            </td>
+            <td style="font-weight: bold">
+                Code:<br>
+                <input type="text" name="number" value="">
+                <br>
+            </td>
+            <td  style="font-weight: bold">
+                Rationale:<br>
+                <input type="text" name="rationale" value="">
+                <br>
+                How to handle over-enrollment:<br>
+                <input type="text" name="howtohandle" value="">
+                <br>
+            </td>        
+        </tr>
+        <tr>
+
+            <td colspan="2">                
+                <input type="checkbox" name="lcl" value="">Prerequisite               
+            </td>
+            <td style="font-weight: bold">
+                Rationale:<br>
+                <input type="text" name="rationale" value="">
+                <br>
+                Required Prereqs.(major,course):<br>
+                <input type="text" name="howtohandle" value="">
+                <br>
+                Recommended Prereqs.:<br>
+                <input type="text" name="howtohandle" value="">
+                <br>
+            </td>
+        </tr>
+        <tr >
+            <td colspan="4" style=" background-color: white">
+            <table style="width: 125%">
+                <tr>
+                    <td style="font-weight: bold; border-top-color: transparent">Approvals:</td>
+                    <td style="font-weight: bold;border-top-color: transparent">Date:</td>
+                    <td style="font-weight: bold;border-top-color: transparent">Comment:</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="cep" value="">CEP: 
+                    </td>
+                    <td><input type="text" name="emptytext1" value=""></td>
+                    <td><input type="text" name="emptytext2" value=""></td>
+                </tr>
+                <tr>
+                        <td>
+                            <input type="checkbox" name="cep" value="">Committee of six: 
+                        </td>
+                        <td><input type="text" name="emptytext1" value=""></td>
+                        <td><input type="text" name="emptytext2" value=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="faculty" value="">Faculty: 
+                    </td>
+                    <td><input type="text" name="emptytext1" value=""></td>
+                    <td><input type="text" name="emptytext2" value=""></td>
+                </tr>
+            </table>
+            </td>
+        </tr>
+    </table>
+  
+</form>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    td{
+        padding: 20px;
+    }
+</style>
+
+<body>
+    <table style="border: 1px solid aqua">
+        <tr style=" background-color: aqua"><td colspan="4" style="font-weight: bold">Event Planner</td></tr>
+        <tr>
+            <td style="font-weight: bold">
+                Event Name
+            </td>
+            <td><input type="text" name="input1"></td>
+            <td rowspan="2" style="font-weight: bold">Requirements</td>
+            <td rowspan="2">
+                <input type="checkbox" name="input2" >Staffing<br>
+                <input type="checkbox" name="input3">Catering <br>
+                <input type="checkbox" name="input4">Security
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Event Coordinator
+            </td>
+            <td><input type="text" name="input5"></td>            
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Email
+            </td>
+            <td><input type="text" name="input6"></td>
+            <td style="font-weight: bold">Event Start Date</td>
+            <td>
+                <input type="datetime" name="input7" >
+            </td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Event Type
+            </td>
+            <td>
+                <select [multiple]>
+                    <option>Concert</option>
+                    <option>- None -</option>
+                </select>
+            </td>
+            <td style="font-weight: bold">Event End Date</td>
+            <td>
+                <input type="date" name="input7" >
+            </td>            
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Total Members
+            </td>
+            <td>
+                <select [multiple]>
+                    <option>-Select-</option>
+                    <option>- None -</option>
+                </select>
+            </td>
+            <td style="font-weight: bold">Location</td>
+            <td>
+                <input type="text" name="input8" >
+            </td>            
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Event Description
+            </td>
+            <td>
+                <input type="text" name="input9" >
+            </td>
+            <td style="font-weight: bold">City</td>
+            <td>
+                <input type="text" name="input10" >
+            </td>            
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Does your program <br> involve any type of <br> outside activity?
+            </td>
+            <td>
+                <input type="radio" name="input11">Yes
+                <input type="radio" name="input12">No
+                
+            </td>
+            <td style="font-weight: bold">State <br> <br> Country</td>
+            <td>
+                <select [multiple]>
+                    <option>-Select-</option>
+                    <option>- None -</option>
+                </select>
+                <br>
+
+                <select [multiple]>
+                        <option>-Select-</option>
+                        <option>- None -</option>
+                    </select>
+
+            </td>            
+        </tr>
+        <tr>
+            <td style="font-weight: bold">
+                Cost Per Person
+            </td>
+            <td>
+                <input type="text" name="input11">USD
+                
+            </td>
+            <td style="font-weight: bold">ATTACH DETAILED ITINERARY</td>
+            <td>
+                <input type="text" name="input13">
+            </td>            
+        </tr>
+        <tr> <td colspan="2" style="text-align: right"> <input type="submit" value="Submit" style="background-color: aqua"> </td> <td colspan="2" style="text-align: left">  <input type="reset" value="Reset" style="background-color: aqua"> </td></tr>
+        
+    </table>
+</body>
+
+</html>
