@@ -1,0 +1,13 @@
+h1 {
+    font-style: italic;
+}
+
+#p01 {
+    color:blue;
+}
+
+p.error {
+    color:red;
+    font-weight: bold;
+    font-size: 100%;
+}
