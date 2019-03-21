@@ -1,0 +1,48 @@
+a:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+a:link.myclass {
+    color: red; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited.myclass {
+    color: peru;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover.myclass {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active.myclass {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
