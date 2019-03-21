@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tables 15</title>
+
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-weight: bold;
+            background-color: antiquewhite;
+        }
+
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 200px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="t01">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td rowspan="2">94</td>
+        </tr>
+        <tr>
+            <td>Paul</td>
+            <td>Smith</td>
+        </tr>
+        <tr>
+            <td>Andrew</td>
+            <td>Hopkins</td>
+            <td>45</td>
+        </tr>
+    </table>
+    <hr />
+    Note: The cell with 94 is now 2 rows. We even could have more rows...
+    
+    <hr />
+    <a href="tables16.html">Next</a>
+</body>
+
+</html>
